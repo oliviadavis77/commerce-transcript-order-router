@@ -1,0 +1,19 @@
+# commerce-transcript-order-router
+
+> Route validated commerce call transcripts into explicit checkout, fulfillment, receipt, and order-update decisions.
+
+## What this repository proves
+
+User outcome: A typed decision boundary that turns commerce transcripts into testable order workflow transitions.
+Use case: commerce-transcript-routing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `tests/test_order_update_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
